@@ -21,7 +21,9 @@ const Nav = () => {
           {isMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
         <div className={`inner ${isMenuOpen ? 'show' : ''}`}>
-          <a><Link to="/">Home</Link></a>
+          {/* <a><Link to="/">Home</Link></a> */}
+          <Link to="/" className='nav-link'>Home</Link>
+
           <a href="#Services" className='nav-link'>Services</a>
           <a href="#About" className='nav-link'>About</a>
           <a href="#Experts" className='nav-link'>Experts</a>
