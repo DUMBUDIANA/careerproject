@@ -1,0 +1,82 @@
+.carousel {
+    overflow: hidden;
+    /* width: calc(100% - 4rem); */
+     /* Total width minus margins for both sides */
+    margin: 0 110px; /* Margins for left and right */
+    position: relative; /* Enable absolute positioning for children */
+  }
+  
+  .carousel-track {
+    display: flex; 
+    transition: transform 0.5s ease; /* Smooth transition for scrolling */
+  }
+  
+  .carousel-item {
+    
+    flex: 0 0 23%; /* Each image takes up 25% width */
+    box-sizing: border-box;
+    /* margin-left: 10px; */
+    margin-right: 15px;
+    text-align: center;
+    position: relative; /* Enable positioning for text overlay */
+  }
+  
+  .carousel-item img {
+    width: 100%; /* All images take full width of the container */
+    height: 400px; /* Maintain aspect ratio */
+    object-fit: cover;
+    /* margin: 0 auto; */
+    border-radius: 8px;
+  }
+  
+  /* New CSS for the gradient overlay */
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); */
+    border-radius: 8px; /* Match the image border radius */
+    z-index: 1; /* Ensure overlay is above the image */
+
+
+    
+  }
+  
+  /* Active image styles */
+  .carousel-item.active {
+
+    flex: 0 0 37%; /* Optional: Keep this for when you want to define the width of the active image */
+  }
+  
+  /* Text overlay for the active image */
+  .active-text-overlay {
+    position: absolute;
+    bottom: 10px; /* Position text at the bottom */
+    left: 10px; /* Adjust as needed to place it on the left */
+    color: #fff; /* White text for better readability */
+    /* background: rgba(0, 0, 0, 0.6); */
+     /* Semi-transparent background for contrast */
+    padding: 8px;
+    border-radius: 5px;
+    z-index: 2; /* Ensure text is above the overlay */
+  }
+  
+  .carousel-item.active .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,  rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.8));
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+
+  @media (max-width: 575.98px) {
+    .carousel-track{flex-direction: column;}
+   }
+  @media (min-width: 576px) and (max-width:768px) {}

@@ -1,0 +1,82 @@
+/* Centering and styling the main service information */
+/* .center {
+  text-align: center;
+  margin: 20px;
+}
+
+.service-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-inner {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.service-inner img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.service-inner p {
+  margin: 5px 0;
+} */
+
+/* Popup styling */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.popup-inner {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-inner h2 {
+  margin-bottom: 20px;
+}
+
+.popup-inner form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-inner input,
+.popup-inner textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.popup-inner button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cUsqZn{display: none;}
+.elKKrY{display: none;}
+textarea{}

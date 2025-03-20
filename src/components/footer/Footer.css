@@ -1,0 +1,101 @@
+.footer {
+    background-color: #333333;
+    color: white;
+    padding: 60px 110px 20px 110px;
+    display: flex;
+    justify-content: space-between;flex-wrap: wrap;
+   
+  }
+  .footer-heading{color: white;font-size: 36px; font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal; }
+  .footer-para{font-size: 16px; font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;line-height: 1.4;}
+    .flex{display: flex;align-items: center;width: 45%;}
+  .same{display: flex;flex-direction: column;margin-left: 49px;}
+  .same p{font-size: 16px;}
+  .sam{width: 30%;}
+  .sam p{}
+  .icon-container{background-color: white; width: 40px;height: 6vh;display: flex;justify-content: center;align-items: center;border-radius: 4px;margin-left: 20px;}
+  .social-icons{display: flex;flex-direction: row;justify-content: space-between;}
+  .line{width: 100%;height: 1px;background-color:antiquewhite;margin-top: 5px;}
+  .contact{  background-color: #333333;padding-bottom: 70px;}
+
+
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+
+
+  /* .footer div {
+    margin: 0 10px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon-container {
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  
+  .icon-container:hover {
+    background-color: #0077b5; /* Change to a hover color, like LinkedIn blue */
+    /* color: white; */
+  /* }
+    */
+
+    @media (max-width: 575.98px) {
+      .footer {
+  
+        flex-direction: column;
+        padding: 50px 50px;
+      }
+      .sam{width: 100%;}
+      .same{display: none;margin-left: 17px;}
+      .social-icons{display: block;display: flex;margin-top: 30px;}
+   }
+  @media (min-width: 576px) and (max-width:768px) {
+    .footer{    padding: 60px 50px 20px 50px;}
+    .same{margin-left: 10px;}
+    .icon-container {
+      background-color: white;
+      width: 40px;
+      height: 4vh;
+      margin-left: 15px;}
+  }
+  .flex{width: 50%;}

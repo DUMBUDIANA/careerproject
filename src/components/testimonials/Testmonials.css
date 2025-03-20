@@ -1,0 +1,76 @@
+
+
+
+
+
+
+
+.outer {
+    text-align: center;
+    padding: 20px;
+}
+
+.para {
+    font-size: 18px;
+    color: #666;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial-card {
+    position: relative; /* Keep this for proper image positioning */
+    width: 200px; /* Adjust width as needed */
+    cursor: pointer;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: height 0.3s ease; /* Smooth transition for height */
+    height: 100px; /* Fixed height to maintain alignment */
+}
+
+/* Base styles for the image */
+.testimonial-card img {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the card */
+    object-fit: cover; /* Cover the entire div */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+    border-radius: 8px; /* Rounded corners */
+    display: block; /* Ensures proper spacing */
+}
+
+/* Effect to increase the height of the top of the clicked image */
+.testimonial-card.active {
+    height: 120px; /* Increase height for active state */
+}
+
+.testimonial-card.active img {
+    transform: translateY(-20px) scale(1.1); /* Move the image up and scale it */
+}
+
+/* Text styles */
+.testimonial-text {
+    margin-top: 20px; /* Space between images and text */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for the text box */
+}
+
+.testimonial-text h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #008080; /* Teal color */
+}
+
+.testimonial-text p {
+    margin: 10px 0 0;
+    color: #666; /* Slightly lighter text */
+}

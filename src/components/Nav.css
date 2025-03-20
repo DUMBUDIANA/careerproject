@@ -1,0 +1,127 @@
+.nav{
+    margin-left: 35px;margin-right: 35px;
+    height: 16vh;
+    background-color: white;
+    display: flex;justify-content: space-between;align-items: center;
+}
+.inner{display: flex;gap: 30px;}
+.inner a{text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+  
+    font-weight: 400;
+    font-style: normal;
+}
+.Contact{}
+span{color: white;}
+.logo{color: #0077B6;font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;text-decoration: none;font-size: 25px;
+}
+link{text-decoration: none;font-size: 60px;}
+.signup{background: #0077B6;color: white;padding: 12px 15px ;border-radius: 6px;}
+.signup a{color: white;}
+.black{color: black;display: inline;}
+p{font-size: 28px;}
+link{color: white;}
+a{color: #333333;}
+  /* General styles */
+.nav {
+  margin-left: 35px;
+  margin-right: 35px;
+  height: 16vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  color: #0077B6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.signup {
+  background: #0077B6;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* Small screens (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+  .inner{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    position: absolute;
+    top: 16vh;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .inner a{ 
+    font-size: 16px
+}
+
+  .inner.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width:768px) {
+
+.inner{
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  position: absolute;
+  top: 16vh;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.inner a{ 
+  font-size: 16px
+}
+
+.inner.show {
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+}
+
+.nav {
+  justify-content: space-between;
+}
+}
+
